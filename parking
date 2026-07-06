@@ -1,0 +1,18 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int hr=sc.nextInt();
+        int coust;
+        if(hr<=2){
+            coust=hr*20;
+        }
+        else if(hr<=5){
+            coust=40+(hr-2)*15;
+        }
+        else{
+            coust=40 + 45+(hr-5)*10;
+        }
+        System.out.print(coust);
+    }
+}
